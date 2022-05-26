@@ -60,37 +60,41 @@ nav{
 .hero{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding: 4rem 0;
 }
 .tagline{
-    width: 30%;
+    width: 40%;
     color: #c5c8ca;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
-.tagline h2{
+.tagline h1{
     color: #fff;
     padding: 2rem 0;
     letter-spacing: 2px;
+    font-size: 36px;
 }
 .tagline p{
-    line-height: 1.2rem;
+    line-height: 2rem;
+    font-size: 24px;
 }
-.tagline .bar{
-    width: 80px;
-    height: 6px;
-    margin: 1rem;
-    border-radius: 3px;
-    background-color: #ff004d;
-}
-.tagline .up{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.tagline img{
+    margin-top: 2rem;
 }
 
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+.socials i{
+    color: #ffdbe4;
+    font-size: 28px;
+    padding: 6px;
+    cursor: pointer;
+}
 .vector_1,
 .vector_2{
     border-radius: 74% 18% 47% 53% / 50% 35% 65% 50% ;
@@ -208,5 +212,15 @@ nav{
     }
     .hamburger::before { top: 6px; }
     .hamburger::after { bottom: 6px; }
+
+
+    /*---------- hero ---------- */
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tagline{
+        width: 100%;
+    }
 
 }
