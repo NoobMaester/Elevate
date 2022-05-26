@@ -53,7 +53,64 @@ nav{
 }
 
 
-/* Media Querries */
+/* ---------- hero styles ------------ */
+#hero{
+    background-color: #364049;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tagline{
+    width: 30%;
+    color: #c5c8ca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tagline h2{
+    color: #fff;
+    padding: 2rem 0;
+    letter-spacing: 2px;
+}
+.tagline p{
+    line-height: 1.2rem;
+}
+.tagline .bar{
+    width: 80px;
+    height: 6px;
+    margin: 1rem;
+    border-radius: 3px;
+    background-color: #ff004d;
+}
+.tagline .up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector_1,
+.vector_2{
+    border-radius: 74% 18% 47% 53% / 50% 35% 65% 50% ;
+    width: 300px;
+    height: 300px;
+}
+.vector_1{
+    background-color: #ffdbe4;
+    position: relative;
+}
+.vector_2{
+    background-color: #ff004d;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+
+
+/*---------------- Media Querries --------------*/
 @media(max-width: 1060px){
     .nav_links li{
         padding-left: 2rem;
@@ -110,7 +167,7 @@ nav{
     }
 
     
-    /* toggle menu */
+    /*------ toggle menu ------*/
     .nav_open .nav_links{
         left: 0;
     }
@@ -127,7 +184,7 @@ nav{
     }
 
 
-    /* hamburger menu */
+    /*------- hamburger menu -----*/
     .hamburger{
         display: block;
         position: relative;
