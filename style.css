@@ -132,22 +132,23 @@ nav{
         align-items: center;
     }
     .navbar img{
-        height: 40px;
+        height: 45px;
         cursor: pointer;
     }
     .nav_links{
-        position: fixed;
+        position: absolute;
         flex-direction: column;
         justify-content: center;
         background-color: #3c464e;
         color: #c5c8ca;
         height: 100%;
         top: 5rem;
-        left: 120vw;
+        left: 0;
         right: 0;
-        z-index: 100;
+        z-index: 1000;
+        opacity: 0;
 
-        transition: left 300ms ease-out;
+        transition: opacity 500ms ease-in-out;
     }
     .nav_links li{
         padding-left: 0rem;
@@ -173,7 +174,7 @@ nav{
     
     /*------ toggle menu ------*/
     .nav_open .nav_links{
-        left: 0;
+        opacity: 1;
     }
     .nav_open .hamburger{
         transform: rotate(135deg);
@@ -222,5 +223,10 @@ nav{
     .tagline{
         width: 100%;
     }
-
+    .tagline img{
+        padding-top: 2rem;
+    }
+    .socials{
+        padding-top: 2rem;
+    }
 }
