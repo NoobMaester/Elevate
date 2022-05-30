@@ -27,12 +27,14 @@ nav{
     height: 60px;
     cursor: pointer;
 }
-.nav_links{
+.nav_links,
+.nav_links2{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav_links li{
+.nav_links li,
+.nav_links2 li{
     list-style: none;
     padding-left: 4rem;
 }
@@ -112,6 +114,45 @@ nav{
     left: 2rem;
 }
 
+/* ------ nav 2.0 ------ */
+#nav{
+    background-color: #eeeff0;
+    padding: 2rem 0;
+}
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar2 img{
+    height: 60px;
+    cursor: pointer;
+}
+.nav_links2 a{
+    text-decoration: none;
+    color: #4b555c;
+    font-size: 14px;
+}
+.navbar2 .btn a{
+    background-color: #ff004d;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    font-size: 12px;
+}
+
+/* ------ footer ------ */
+footer{
+    background-color: #000000;
+}
+.main_footer{
+    text-align: center;
+}
+.main_footer p{
+    font-size: 14px;
+    padding: 2rem;
+    color: #ffffff;
+}
 
 
 /*---------------- Media Querries --------------*/
@@ -130,6 +171,9 @@ nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .nav_links2{
+        display: none;
     }
     .navbar img{
         height: 45px;
@@ -163,7 +207,6 @@ nav{
     .btn a:hover{
         border-bottom: none;
     }
-
     .nav_toggle{
         background: transparent;
         cursor: pointer;
