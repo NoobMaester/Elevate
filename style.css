@@ -245,6 +245,65 @@ nav{
     display: none;
 }
 
+/* ------- reviews ------- */
+#reviews{
+    background-color: #e1e1e1;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+.reviews h1{
+    padding: 2rem 0;
+    color: #4b555c;
+}
+.profile{
+    border-radius: 50%;
+    border-top: 7px solid #364049;
+    border-left: 7px solid #364049;
+    border-right: 7px solid #364049;
+    border-bottom: 7px solid #ff004d;
+    margin: 1rem 0;
+}
+.profile img{
+    width: 120px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.card h2,
+.card p,
+.card h4{
+    color: #364049;
+    margin-bottom: 10px;
+}
+.card h3{
+    color: #ff004d;
+    margin-bottom: 10px;
+}
+.card p{
+    width: 70%;
+}
+.star{
+    display: flex;
+    margin-top: 1rem;
+}
+.star i{
+    color:#ff004d;
+    padding-left: 10px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+}
+.socials2 i{
+    color: #364049;
+    font-size: 28px;
+    padding: 6px;
+    cursor: pointer;
+}
+
 
 
 
@@ -267,7 +326,8 @@ footer{
 
 /*---------------- Media Querries --------------*/
 @media(max-width: 1060px){
-    .nav_links li{
+    .nav_links li, 
+    .nav_links2 li{
         padding-left: 2rem;
     }
     .navbar img{
@@ -284,12 +344,34 @@ footer{
         border: 4px solid #ff004d;
         border-radius: 10px;
         margin: 1rem 0;
+        display: none;
+    }
+    .cube p{
+        font-size: 14px;
+        padding: 0;
+    }
+    .details p{
+        font-size: 13px;
     }
     
 }
 
 @media (max-width: 900px){
-    
+    .socials2{
+        padding: 2rem;
+    }
+    .reviews h1{
+        text-align: center;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        align-items: center;
+        text-align: center;
+    }
     .gray{
         display: none;
         position: relative;
@@ -347,11 +429,11 @@ footer{
 
         transition: opacity 500ms ease-in-out;
     }
-    .nav_links li{
+    .nav_links li, .nav_links2 li{
         padding-left: 0rem;
         margin: 2rem;
     }
-    .nav_links a{
+    .nav_links a, .nav_links2 a{
         font-size: 1.5rem;
     }
     .nav_links a:hover{
