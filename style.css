@@ -304,6 +304,104 @@ nav{
     cursor: pointer;
 }
 
+/* -------contact us -------- */
+#contact{
+    background-color: #3c464e;
+    padding: 2rem 0;
+}
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.up h1{
+    color: #ffdbe4;
+    font-size: 36px;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+}
+.down{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 4rem;
+}
+.up img{
+    height: 60px;
+    cursor: pointer;
+}
+
+.btn1{
+    background-color: #ff004d;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 30%;
+    cursor: pointer;
+    font-family: 'ubuntu';
+}
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.contacts1{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.infos{
+    padding-left: 1rem;
+    margin-top: 20px;
+}
+.infos p{
+    color: #e1e1e1;
+    padding: 8px;
+    font-size: 14px;
+}
+.socials3{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px #e1e1e1 solid;
+    padding-right: 2rem;
+
+    
+}
+.socials3 i{
+    color: #ffdbe4;
+    font-size: 28px;
+    padding: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.contact_form label{
+    color: #e1e1e1;
+    font-size: 14px;
+    font-weight: bold;
+}
+.contact_form input{
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin: 1rem 0;
+    width: 70%;
+
+}
+.contact_form textarea{
+    border-radius: 10px;
+    border: none;
+    width: 70%;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 
@@ -353,10 +451,37 @@ footer{
     .details p{
         font-size: 13px;
     }
+    .contacts1{
+        display: flex;
+        justify-content: space-between;
+    }
     
 }
 
-@media (max-width: 900px){
+@media (max-width: 920px){
+    .up{
+        flex-direction: column;
+    }
+    .up img{
+        display: none;
+    }
+    .up h1{
+        text-align: center;
+    }
+    .down{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .contact_form{
+        width: 100%;
+    }
+    .contacts{
+        padding: 2rem 0;
+    }
+    .contacts1{
+        width: 100%;
+    }
     .socials2{
         padding: 2rem;
     }
@@ -506,5 +631,6 @@ footer{
     }
     .socials{
         padding-top: 2rem;
+        flex-direction: row;
     }
 }
