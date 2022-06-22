@@ -310,6 +310,7 @@ nav{
 #contact{
     background-color: #3c464e;
     padding: 2rem 0;
+    height: 100vh;
 }
 .up{
     display: flex;
@@ -518,6 +519,10 @@ footer{
 }
 
 @media (max-width: 900px){
+
+    #contact{
+        height: auto;
+    }
 
     .modal{
         top: 540%;
