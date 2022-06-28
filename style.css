@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:wght@600&family=Roboto:wght@400;500&family=Ubuntu&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka:wght@500&family=Inter:wght@600&family=Roboto:wght@400;500&family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -60,15 +62,16 @@ nav{
 /* ---------- hero styles ------------ */
 #hero{
     background-color: #364049;
+    height: auto;
 }
 .hero{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 .tagline{
-    width: 40%;
+    width: 50%;
     color: #c5c8ca;
     display: flex;
     flex-direction: column;
@@ -83,7 +86,7 @@ nav{
 }
 .tagline p{
     line-height: 2rem;
-    font-size: 24px;
+    font-size: 18px;
 }
 .tagline img{
     margin-top: 2rem;
@@ -116,31 +119,27 @@ nav{
     left: 2rem;
 }
 
-/* ------ nav 2.0 ------ */
-#nav{
-    background-color: #eeeff0;
-    padding: 2rem 0;
-}
-.navbar2{
+/* ------ partners ------ */
+.partners{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 4rem;
+    font-family: 'Courgette', cursive;
 }
-.navbar2 img{
-    height: 60px;
-    cursor: pointer;
-}
-.nav_links2 a{
-    text-decoration: none;
+.partners h4,
+.partners i{
     color: #4b555c;
-    font-size: 14px;
 }
-.navbar2 .btn a{
-    background-color: #ff004d;
-    color: #fff;
-    border-radius: 10px;
-    padding: 10px 2rem;
-    font-size: 12px;
+.part{
+    display: flex;
+}
+.part i{
+    margin-right: 5px;
+}
+#partners h1{
+    padding: 2rem 0;
+    color: #4b555c;
 }
 
 /* ------ about us ------- */
@@ -178,7 +177,7 @@ nav{
     margin-bottom: 2rem;
 }
 .apps .cube{
-    background-color: #ff9cb8;
+    background-color: #ff004d;
 }
 .cube h1, .cube p{
     color: #fff;
@@ -189,11 +188,14 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 40%;
+    width: 50%;
     margin-left: 1rem;
 }
-.details h3, p{
-    margin-bottom: 1rem;
+.details h3{
+    padding-bottom: 1rem;
+}
+.details p{
+    padding-bottom: 2rem;
 }
 .details p, .details a{
     font-size: 14px;
@@ -515,10 +517,36 @@ footer{
         display: flex;
         justify-content: space-between;
     }
+
+    .partners h4{
+        font-size: 12px;
+        text-align: center;
+    }
+    .partners{
+        align-items: flex-start;
+    }
+    .part{
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
 
 @media (max-width: 900px){
+    #partners h1{
+        text-align: center;
+    }
+    .partners h4{
+        font-size: 10px;
+        text-align: center;
+    }
+    .partners{
+        align-items: flex-start;
+    }
+    .part{
+        flex-direction: column;
+        align-items: center;
+    }
 
     #contact{
         height: auto;
