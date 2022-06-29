@@ -123,9 +123,8 @@ nav{
 .partners{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding-bottom: 4rem;
-    font-family: 'Courgette', cursive;
 }
 .partners h4,
 .partners i{
@@ -133,9 +132,12 @@ nav{
 }
 .part{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.part i{
+.part img{
     margin-right: 5px;
+    width: 150px;
 }
 #partners h1{
     padding: 2rem 0;
@@ -165,24 +167,15 @@ nav{
 .us h1{
     padding-bottom: 4rem;
 }
-.websites, .apps{
+.websites{
     display: flex;
     margin-bottom: 3rem;
+    align-items: flex-start;
 }
-.cube{
-    padding: 1rem;
+.websites img{
+    display: flex;
     width: 30%;
-    background-color: #ff004d;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-}
-.apps .cube{
-    background-color: #ff004d;
-}
-.cube h1, .cube p{
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    
 }
 .details{
     display: flex;
@@ -205,17 +198,7 @@ nav{
     text-decoration: none;
     font-weight: 600;
 }
-.more{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.more i{
-    color: #ff004d;
-    font-size: 18px;
-    font-weight: light;
-    margin-left: 1rem;
-}
+
 
 .soft{
     flex: 1;
@@ -524,6 +507,7 @@ footer{
     }
     .partners{
         align-items: flex-start;
+        flex-wrap: wrap;
     }
     .part{
         flex-direction: column;
@@ -541,7 +525,7 @@ footer{
         text-align: center;
     }
     .partners{
-        align-items: flex-start;
+        flex-wrap: wrap;
     }
     .part{
         flex-direction: column;
@@ -579,10 +563,13 @@ footer{
         width: 100%;
     }
     .contacts{
-        padding: 2rem 0;
+        padding: 2rem;
+        width: auto;
     }
     .contacts1{
         width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .socials3{
         padding-right: 1rem;
@@ -618,19 +605,23 @@ footer{
     .us{
         padding-bottom: 0;
     }
-    .cube{
-        width: 40%;
+
+    .websites{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     .details{
-        width: 60%;
+        width: 100%;
+        align-items: center;
     }
     .details h3, p{
-        margin-bottom: 0.5rem;
+        line-height: 18px;
+    }
+    .details h3{
+        padding-top: 1rem;
     }
 
-    .navbar2{
-        justify-content: center;
-    }
 
     .navbar{
         display: flex;
