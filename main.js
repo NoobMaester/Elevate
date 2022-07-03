@@ -1,3 +1,5 @@
+//hamburger menu
+
 const navToggle = document.querySelector('.hamburger');
 
 const navLink = document.querySelectorAll('.nav_link');
@@ -15,30 +17,32 @@ navLink.forEach(link => {
 
 
 //setting up emailJS
-//const send = document.getElementById('send');
 
 const ok = document.getElementById('ok');
 
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(e){
         e.preventDefault();
-        const inputs = document.querySelectorAll('.clear');
-        const modal = document.getElementById('modal');
 
-        //function sendMail(){
+        const inputs = document.querySelectorAll('.clear');
+
+        const alert = document.querySelector('.alert');
+
+        
         emailjs.sendForm('service_l4a39wc', 'template_q5ox8np', '#contact-form')
             .then(function(res){
                 console.log('SUCCESS!', res.status, res.text);
                 inputs.forEach(input => input.value = '');
-                modal.style.display = 'flex';
+                alert.style.display = 'block';
             }, function(error){
                 console.log('FAILED...', error);
             });
+
+            //success message disappears after sometime.
+
+            setTimeout(function(){
+                alert.style.display = 'none'
+            }, 5000);
         
-        //}
-        //send.addEventListener('click', sendMail);
     });
-    ok.addEventListener('click', function(e){
-        modal.style.display = 'none'
-    })
 }

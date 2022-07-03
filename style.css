@@ -243,6 +243,7 @@ nav{
 #reviews{
     background-color: #e1e1e1;
 }
+
 .card{
     display: flex;
     flex-direction: column;
@@ -262,7 +263,7 @@ nav{
     margin: 1rem 0;
 }
 .profile img{
-    width: 120px;
+    width: 180px;
     border-radius: 50%;
     margin: 5px;
 }
@@ -271,10 +272,12 @@ nav{
 .card h4{
     color: #364049;
     margin-bottom: 10px;
+    padding-left: 1rem;
 }
 .card h3{
     color: #ff004d;
     margin-bottom: 10px;
+    padding-left: 1rem;
 }
 .card p{
     width: 70%;
@@ -290,12 +293,17 @@ nav{
 .cards{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .socials2 i{
     color: #364049;
     font-size: 28px;
     padding: 6px;
     cursor: pointer;
+}
+.socials2{
+    display: flex;
+    flex-direction: column;
 }
 
 /* -------contact us -------- */
@@ -401,60 +409,14 @@ nav{
     justify-content: space-between;
     margin: 1rem 0;
 }
-
-
-/* ------ modal ----- */
-.modal{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.6);
-    position: absolute;
-    top: 345%;
-    left: 0;
+.alert{
     display: none;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    transition: display 300ms ease-in-out;
+    color: green;
+    width: 20%;
+    padding: 0 1rem;
+    font-size: 24px;
+    transition: display 2s ease-in-out;
 }
-.modal-container{
-    background-color: white;
-    width: 60%;
-    height: 60%;
-    padding: 1rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.modal-container h1{
-    text-align: center;
-    padding: 2rem;
-}
-.modal-container p{
-    text-align: center;
-    width: 40%;
-    line-height: 2rem;
-}
-.modal-container .btn{
-    margin-top: 1rem;
-    padding: 1rem 2rem;
-    outline: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border: #ff004d 1px solid;
-    background: #ff004d;
-    border-radius: 5px;
-    color: white;
-}
-.modal-container i{
-    font-size: 6rem;
-    color: #ff004d;
-}
-
-
-
 
 
 /* ------ footer ------ */
@@ -542,6 +504,10 @@ footer{
     #contact{
         height: auto;
     }
+    .alert{
+        width: auto;
+        padding: 2rem;
+    }
 
     .modal{
         top: 540%;
@@ -583,6 +549,7 @@ footer{
     }
     .socials2{
         padding: 2rem;
+        flex-direction: row;
     }
     .reviews h1{
         text-align: center;
