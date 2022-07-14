@@ -242,6 +242,7 @@ nav{
 /* ------- reviews ------- */
 #reviews{
     background-color: #e1e1e1;
+    height: 100vh;
 }
 
 .card{
@@ -744,5 +745,8 @@ footer{
     
     #partners h1{
         padding-bottom: 10px;
+    }
+    #reviews{
+        height: auto;
     }
 }

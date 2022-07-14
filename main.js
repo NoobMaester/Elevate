@@ -41,7 +41,7 @@ window.onload = function() {
             //success message disappears after sometime.
 
             setTimeout(function(){
-                alert.style.display = 'none'
+                alert.style.display = 'none';
             }, 5000);
         
     });
